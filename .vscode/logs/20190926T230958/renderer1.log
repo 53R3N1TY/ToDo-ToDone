@@ -1,0 +1,6 @@
+[2019-09-26 23:10:11.819] [renderer1] [warning] UNRESPONSIVE extension host, 'ritwickdey.LiveServer' took 99% of 3831.081ms, saved PROFILE here: '/tmp/exthost-a312cd.cpuprofile' [{"id":"gc","total":3716,"percentage":0},{"id":"program","total":38690,"percentage":1},{"id":"ritwickdey.LiveServer","total":3785922,"percentage":99},{"id":"self","total":1079,"percentage":0}]
+[2019-09-26 23:11:40.614] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2019-09-26 23:11:48.270] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2019-09-26 23:11:49.695] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2019-09-26 23:11:55.016] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2019-09-26 23:11:56.943] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
