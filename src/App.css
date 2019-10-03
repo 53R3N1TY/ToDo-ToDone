@@ -17,6 +17,11 @@
   color: white;
 }
 
+.subtitle {
+  margin-top: -10px;
+  font-size: calc(10px + 1vmin);
+}
+
 .main {
   background-color: #09d3ac;
   min-height: 20vh;
