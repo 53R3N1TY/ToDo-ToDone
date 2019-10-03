@@ -2,6 +2,13 @@ import React, {Component} from "react";
 import './App.css';
 
 class Header extends Component {
+    constructor() {
+        super()
+        this.state = {
+            title:'To Do App',
+            subtitle:'Keep track from to do to done'
+        }
+    }
     render() {
         const date = new Date()
         const hours = date.getHours()
@@ -25,7 +32,10 @@ class Header extends Component {
         }
         return (
             <div>
-                <header className="header">This is header</header>
+                <header className="header">
+                    <h3>{this.state.title}</h3>
+                    <p className="subtitle">{this.state.subtitle}</p>
+                </header>
                 <p style={styles}>Good {timeOfDay}!</p>
             </div>
         )
