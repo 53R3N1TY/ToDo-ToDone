@@ -26,8 +26,14 @@ function App() {
 
 /* *****Example of class base component***** */
 class App extends React.Component {
-  render() {
-    const listComponent = list.map(todoitem => <ToDoItem key={todoitem.id} item={todoitem.item} time={todoitem.time} completed={todoitem.completed}/>)
+  constructor() {
+    super()
+    this.state = {
+      todos : list
+    }
+  }
+  render() {  
+    const listComponent = this.state.todos.map(todoitem => <ToDoItem key={todoitem.id} item={todoitem.item} time={todoitem.time} completed={todoitem.completed}/>)
 
     return (
       <div className="App">
