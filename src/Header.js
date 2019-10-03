@@ -6,13 +6,15 @@ class Header extends Component {
         super()
         this.state = {
             title:'To Do App',
-            subtitle:'Keep track from to do to done'
+            subtitle:'Keep track from to do to done',
+            isLoggedIn:true
         }
     }
     render() {
         const date = new Date()
         const hours = date.getHours()
         let timeOfDay
+        let displayLog
 
         const styles = {
             fontSize: 30
@@ -30,13 +32,23 @@ class Header extends Component {
             timeOfDay = "night"
             styles.color = "F9FF00"
         }
+
+        if (this.state.isLoggedIn === true) {
+            displayLog = "In"
+        }
+        else {
+            displayLog = "Out"
+        }
+
         return (
             <div>
                 <header className="header">
                     <h3>{this.state.title}</h3>
                     <p className="subtitle">{this.state.subtitle}</p>
                 </header>
-                <p style={styles}>Good {timeOfDay}!</p>
+                <p style={styles}>Good {timeOfDay}! 
+                    <span>You are currently logged {displayLog}</span>
+                </p>
             </div>
         )
     }
